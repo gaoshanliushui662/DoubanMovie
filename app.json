@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/movie/movie",
+    "pages/top250/top250",
     "pages/index/index",
+    "pages/search/search",
     "pages/logs/logs"
   ],
   "tabBar": {

@@ -2,18 +2,8 @@
 var subjectsUtil = require("../../utils/subjectsUtil.js");
 Page({
   data: {
-    imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
     movies: [],
     loadingHidden: false
-
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -34,7 +24,7 @@ Page({
   loadMovie(){
       var page = this;
       wx.request({
-          url:"https://api.douban.com/v2/movie/in_theaters",
+          url:"https://api.douban.com/v2/movie/top250",
           header:{
               'Content-Type':'text/html'
           },
